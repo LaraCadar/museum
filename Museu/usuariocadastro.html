@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+		<link type="text/css" href="normalize.css" rel="stylesheet"/> 
+		<link type="text/css" href="style.css" rel="stylesheet"/>
+		<title>Museum</title>
+	</head>
+
+	<body>		
+		
+		
+		<header>
+			<div id="logo">
+			<h1>Museu Municipal de Brasilândia</h1>
+			</div>
+			<div id="menu">			
+				<nav>
+					<ul>
+						<li><a href="index.html" target="_self" >Inicio</a></li>
+						<li><a href="about.html" target="_self">Galeria</a></li>						
+						<li><a href="noticias.html" target="_self">Noticias</a></li>							
+						<li><a href="login.html" target="_self">Login</a></li>
+						<li><a class="active" href="usuariocadastro.html" target="_self">Cadastro de Usuario</a></li>
+					</ul>			
+				</nav>
+			</div>
+		</header>
+		
+		
+		<br><br>
+		
+		<div class="cadastroUsuario">
+			<form>
+				<fieldset>
+					<legend>Cadastro de Usuário</legend>
+						<br>Nome:
+						<br><input type="text" name="nomeUsuario" required placeholder="Nome Completo" autofocus><br>
+						<br>Data de Nascimento:
+						<br><input type="date" name="datanasc" required"><br>
+						<br>Sexo:
+						<br><input type="radio" name="sexo" value="Male" id="Male" required> <label for="Male">M</label>
+						<input type="radio" name="sexo" value="Female" id="Female" required> <label for="Female">F</label><br>
+						<br>CPF:
+						<br><input type="text" name="cpf" required placeholder="CPF"><br>
+						<br>Senha:
+						<br><input type="password" name="password" required placeholder="Senha"><br>
+						<br>Tipo de usuário:
+						<br><select name="type_of_user" required>
+						<option value="Administrador">Administrador</option>
+						<option value="Funcionário">Funcionário</option>
+						<option value="Visitante">Visitante</option>
+						</select>						
+						<br><br><br>
+						<button type="submit" value="Submit">Submit</button>
+						<button type="reset" value="Reset">Reset</button>
+						<a href="index.html" class="send"><button>Voltar</a> </button>
+				</fieldset>
+			</form>			
+		</div>
+		
+		
+		
+	</body>
+
+</html>
